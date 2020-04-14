@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refactoring & Recursive</title>
+</head>
+
+<body>
+
+    <!-- here's the code before refactoring
+
+    function myFunction(a, b) {
+        let total;
+        total = a + b;
+
+        return total;
+    }
+
+    alert(myFunction(12, 10)); -->
+
+    <!-- refactoring -->
+    <script>
+        function myFunction(a, b) {
+            return total = a + b;
+        }
+
+        alert(myFunction(12, 10));
+    </script>
+
+    <script>
+        function myFunction(a, b) {
+            return a + b;
+        }
+
+        alert(myFunction(1200, 300));
+    </script>
+
+    <!-- Recursive -->
+    <script>
+        function test() {
+            return test();
+        }
+
+        test();
+    </script>
+
+    <script>
+        function countdown(n) {
+            console.log(n);
+
+            return countdown(n - 1);
+        }
+
+        countdown(10);
+    </script>
+
+    <script>
+        function countdown(n) {
+            if (n === 0) {
+                return;
+            }
+            console.log(n);
+
+            return countdown(n - 1);
+        }
+
+        countdown(10);
+    </script>
+
+</body>
+
+</html>
